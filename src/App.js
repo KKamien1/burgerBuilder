@@ -1,18 +1,15 @@
 import React, { Component } from "react";
 
 import Layout from "./components/Layout/Layout";
+import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <Layout>Elo</Layout>
-        </header>
-      </div>
+      <Layout>
+        <p>Elo Appka</p>
+        <BurgerBuilder />
+      </Layout>
     );
   }
 }
