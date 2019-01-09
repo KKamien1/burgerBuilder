@@ -13,11 +13,7 @@ const BuildControl = props => {
       >
         Less
       </button>
-      <button
-        className={classes.Nore}
-        onClick={props.added}
-        onClick={props.ordered}
-      >
+      <button className={classes.Nore} onClick={props.added}>
         More
       </button>
     </div>

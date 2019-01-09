@@ -31,6 +31,7 @@ export default class BurgerBuilder extends Component {
     this.setState({ purchasing: true });
   };
   purchaseCloseHandler = () => {
+    console.log("purchaseCloseHandler");
     this.setState({ purchasing: false });
   };
   purchaseContinueHandler = () => {
@@ -49,6 +50,7 @@ export default class BurgerBuilder extends Component {
   }
 
   addIngredientHandler = type => {
+    console.log("addIngredientHandler");
     const oldCount = this.state.ingredients[type];
     const updatedCount = oldCount + 1;
     const updatedIngredients = { ...this.state.ingredients };
